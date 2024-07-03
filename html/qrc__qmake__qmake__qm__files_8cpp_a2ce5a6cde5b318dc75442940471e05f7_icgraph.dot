@@ -1,0 +1,11 @@
+digraph "qRegisterResourceData"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="qRegisterResourceData",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip=" "];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="qInitResources_qmake\l_qmake_qm_files",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$qrc__qmake__qmake__qm__files_8cpp.html#ae4c70a1bc89eb644936ad8c4e4da246d",tooltip=" "];
+}

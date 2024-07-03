@@ -1,0 +1,17 @@
+digraph "WizualizacjaPogody::updateWindChart"
+{
+ // LATEX_PDF_SIZE
+  bgcolor="transparent";
+  edge [fontname=Helvetica,fontsize=10,labelfontname=Helvetica,labelfontsize=10];
+  node [fontname=Helvetica,fontsize=10,shape=box,height=0.2,width=0.4];
+  rankdir="RL";
+  Node1 [id="Node000001",label="WizualizacjaPogody\l::updateWindChart",height=0.2,width=0.4,color="gray40", fillcolor="grey60", style="filled", fontcolor="black",tooltip="Aktualizuje wykres prędkości wiatru."];
+  Node1 -> Node2 [id="edge1_Node000001_Node000002",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node2 [id="Node000002",label="WizualizacjaPogody\l::updateCharts",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_wizualizacja_pogody.html#a9c19b21dc24079f561c7949d935a5bdf",tooltip="Slot do aktualizacji wykresów dla danego miasta."];
+  Node2 -> Node3 [id="edge2_Node000002_Node000003",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node3 [id="Node000003",label="WizualizacjaPogody\l::CityChanged",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_wizualizacja_pogody.html#aca1438e6e108096683c94825b0d0a9aa",tooltip="Slot do zmiany wybranego miasta w interfejsie aplikacji."];
+  Node3 -> Node4 [id="edge3_Node000003_Node000004",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node4 [id="Node000004",label="WizualizacjaPogody\l::WizualizacjaPogody",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$class_wizualizacja_pogody.html#aed0faa566811cb430818b3a688e45540",tooltip="Konstruktor."];
+  Node2 -> Node5 [id="edge4_Node000002_Node000005",dir="back",color="steelblue1",style="solid",tooltip=" "];
+  Node5 [id="Node000005",label="main",height=0.2,width=0.4,color="grey40", fillcolor="white", style="filled",URL="$main_8cpp.html#a0ddf1224851353fc92bfbff6f499fa97",tooltip=" "];
+}

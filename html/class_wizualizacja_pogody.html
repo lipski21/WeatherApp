@@ -1,0 +1,942 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pogoda: Dokumentacja klasy WizualizacjaPogody</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Pogoda
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.10.0 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_wizualizacja_pogody.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="#pro-methods">Metody chronione</a> &#124;
+<a href="#pri-methods">Metody prywatne</a> &#124;
+<a href="#pri-attribs">Atrybuty prywatne</a> &#124;
+<a href="class_wizualizacja_pogody-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy WizualizacjaPogody</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Główna klasa aplikacji do wizualizacji pogody.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla WizualizacjaPogody</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_wizualizacja_pogody.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:a11475574777959eca041fa7d5c03687b" id="r_a11475574777959eca041fa7d5c03687b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a11475574777959eca041fa7d5c03687b">updateTemperature</a> (double temperature, const QString &amp;city)</td></tr>
+<tr class="memdesc:a11475574777959eca041fa7d5c03687b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot do aktualizacji temperatury w interfejsie aplikacji.  <br /></td></tr>
+<tr class="separator:a11475574777959eca041fa7d5c03687b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c19b21dc24079f561c7949d935a5bdf" id="r_a9c19b21dc24079f561c7949d935a5bdf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9c19b21dc24079f561c7949d935a5bdf">updateCharts</a> (const QJsonArray &amp;temperatures, const QJsonArray &amp;timeArray, const QJsonArray &amp;rainArray, const QJsonArray &amp;pressArray, const QJsonArray &amp;windArray, const QString &amp;city)</td></tr>
+<tr class="memdesc:a9c19b21dc24079f561c7949d935a5bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot do aktualizacji wykresów dla danego miasta.  <br /></td></tr>
+<tr class="separator:a9c19b21dc24079f561c7949d935a5bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca1438e6e108096683c94825b0d0a9aa" id="r_aca1438e6e108096683c94825b0d0a9aa"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aca1438e6e108096683c94825b0d0a9aa">CityChanged</a> (int index)</td></tr>
+<tr class="memdesc:aca1438e6e108096683c94825b0d0a9aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot do zmiany wybranego miasta w interfejsie aplikacji.  <br /></td></tr>
+<tr class="separator:aca1438e6e108096683c94825b0d0a9aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a010a0be3e336169f97dd5559f3ed44af" id="r_a010a0be3e336169f97dd5559f3ed44af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a010a0be3e336169f97dd5559f3ed44af">languageChanged</a> (int index)</td></tr>
+<tr class="memdesc:a010a0be3e336169f97dd5559f3ed44af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Slot do zmiany języka aplikacji.  <br /></td></tr>
+<tr class="separator:a010a0be3e336169f97dd5559f3ed44af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:aed0faa566811cb430818b3a688e45540" id="r_aed0faa566811cb430818b3a688e45540"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aed0faa566811cb430818b3a688e45540">WizualizacjaPogody</a> (QWidget *parent=nullptr)</td></tr>
+<tr class="memdesc:aed0faa566811cb430818b3a688e45540"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <br /></td></tr>
+<tr class="separator:aed0faa566811cb430818b3a688e45540"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad75679fba9493d25260cba98609953f7" id="r_ad75679fba9493d25260cba98609953f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad75679fba9493d25260cba98609953f7">~WizualizacjaPogody</a> ()</td></tr>
+<tr class="memdesc:ad75679fba9493d25260cba98609953f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destruktor.  <br /></td></tr>
+<tr class="separator:ad75679fba9493d25260cba98609953f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6a6a230bff02f9dcba5bcb1587a84af" id="r_aa6a6a230bff02f9dcba5bcb1587a84af"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa6a6a230bff02f9dcba5bcb1587a84af">updateTempChart</a> (const QJsonArray &amp;temperatures, const QJsonArray &amp;timeArray)</td></tr>
+<tr class="memdesc:aa6a6a230bff02f9dcba5bcb1587a84af"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje wykres temperatury.  <br /></td></tr>
+<tr class="separator:aa6a6a230bff02f9dcba5bcb1587a84af"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8fb512c9809087cd41e8242a38d3b1de" id="r_a8fb512c9809087cd41e8242a38d3b1de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8fb512c9809087cd41e8242a38d3b1de">updateRainChart</a> (const QJsonArray &amp;rains, const QJsonArray &amp;timeArray)</td></tr>
+<tr class="memdesc:a8fb512c9809087cd41e8242a38d3b1de"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje wykres opadów.  <br /></td></tr>
+<tr class="separator:a8fb512c9809087cd41e8242a38d3b1de"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d3b74843c992524835cfe28cee19bb4" id="r_a8d3b74843c992524835cfe28cee19bb4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8d3b74843c992524835cfe28cee19bb4">updatePressChart</a> (const QJsonArray &amp;pressS, const QJsonArray &amp;timeArray)</td></tr>
+<tr class="memdesc:a8d3b74843c992524835cfe28cee19bb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje wykres ciśnienia.  <br /></td></tr>
+<tr class="separator:a8d3b74843c992524835cfe28cee19bb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac4970ffe3ac99677cdd6b049e55f9a9a" id="r_ac4970ffe3ac99677cdd6b049e55f9a9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac4970ffe3ac99677cdd6b049e55f9a9a">updateWindChart</a> (const QJsonArray &amp;winds, const QJsonArray &amp;timeArray)</td></tr>
+<tr class="memdesc:ac4970ffe3ac99677cdd6b049e55f9a9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Aktualizuje wykres prędkości wiatru.  <br /></td></tr>
+<tr class="separator:ac4970ffe3ac99677cdd6b049e55f9a9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
+Metody chronione</h2></td></tr>
+<tr class="memitem:a1c9b4ca8e3d4bee2ee67a7c7c0e39e81" id="r_a1c9b4ca8e3d4bee2ee67a7c7c0e39e81"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1c9b4ca8e3d4bee2ee67a7c7c0e39e81">resizeEvent</a> (QResizeEvent *event) override</td></tr>
+<tr class="memdesc:a1c9b4ca8e3d4bee2ee67a7c7c0e39e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Przesłonięta metoda do obsługi zdarzenia zmiany rozmiaru okna.  <br /></td></tr>
+<tr class="separator:a1c9b4ca8e3d4bee2ee67a7c7c0e39e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Metody prywatne</h2></td></tr>
+<tr class="memitem:ae0247e8fa07e0c0751d2ea72b336f073" id="r_ae0247e8fa07e0c0751d2ea72b336f073"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae0247e8fa07e0c0751d2ea72b336f073">scaleChart</a> (QChartView *chartView)</td></tr>
+<tr class="memdesc:ae0247e8fa07e0c0751d2ea72b336f073"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda do skalowania widoku wykresu.  <br /></td></tr>
+<tr class="separator:ae0247e8fa07e0c0751d2ea72b336f073"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7b8e4b59ac3831da026d5d51cd83dc33" id="r_a7b8e4b59ac3831da026d5d51cd83dc33"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7b8e4b59ac3831da026d5d51cd83dc33">updateFontSize</a> (QLabel *label)</td></tr>
+<tr class="memdesc:a7b8e4b59ac3831da026d5d51cd83dc33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Metoda do aktualizacji rozmiaru czcionki etykiety.  <br /></td></tr>
+<tr class="separator:a7b8e4b59ac3831da026d5d51cd83dc33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Atrybuty prywatne</h2></td></tr>
+<tr class="memitem:a33815079c1aa71cc75a82e54b03efba4" id="r_a33815079c1aa71cc75a82e54b03efba4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_ui_1_1_wizualizacja_pogody.html">Ui::WizualizacjaPogody</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a33815079c1aa71cc75a82e54b03efba4">ui</a></td></tr>
+<tr class="separator:a33815079c1aa71cc75a82e54b03efba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae288efa84b8319ec6abe8d9917599ffd" id="r_ae288efa84b8319ec6abe8d9917599ffd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_weather_data.html">WeatherData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae288efa84b8319ec6abe8d9917599ffd">weatherData</a></td></tr>
+<tr class="separator:ae288efa84b8319ec6abe8d9917599ffd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3d442230473e87fd9dfafe16fe5128df" id="r_a3d442230473e87fd9dfafe16fe5128df"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a3d442230473e87fd9dfafe16fe5128df">TempChart</a></td></tr>
+<tr class="separator:a3d442230473e87fd9dfafe16fe5128df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abc79dc5d9c3c3cf519108c6730fd9511" id="r_abc79dc5d9c3c3cf519108c6730fd9511"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#abc79dc5d9c3c3cf519108c6730fd9511">RainChart</a></td></tr>
+<tr class="separator:abc79dc5d9c3c3cf519108c6730fd9511"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa5c8bf823ae15ae1efafce7e31419ee6" id="r_aa5c8bf823ae15ae1efafce7e31419ee6"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa5c8bf823ae15ae1efafce7e31419ee6">PressChart</a></td></tr>
+<tr class="separator:aa5c8bf823ae15ae1efafce7e31419ee6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8deeae3599a803f0a3f09faa6f93c839" id="r_a8deeae3599a803f0a3f09faa6f93c839"><td class="memItemLeft" align="right" valign="top">QChartView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a8deeae3599a803f0a3f09faa6f93c839">WindChart</a></td></tr>
+<tr class="separator:a8deeae3599a803f0a3f09faa6f93c839"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a479f00598c538a3ecc904fce18445a93" id="r_a479f00598c538a3ecc904fce18445a93"><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a479f00598c538a3ecc904fce18445a93">cityComboBox</a></td></tr>
+<tr class="separator:a479f00598c538a3ecc904fce18445a93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf014e62f96a09ccfa10bd7f5cf6c5f8" id="r_aaf014e62f96a09ccfa10bd7f5cf6c5f8"><td class="memItemLeft" align="right" valign="top">QComboBox *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aaf014e62f96a09ccfa10bd7f5cf6c5f8">zmianaJezyka</a></td></tr>
+<tr class="separator:aaf014e62f96a09ccfa10bd7f5cf6c5f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46a5e2e0aa182547e56cec8c41dced8" id="r_ab46a5e2e0aa182547e56cec8c41dced8"><td class="memItemLeft" align="right" valign="top">QVector&lt; QJsonArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab46a5e2e0aa182547e56cec8c41dced8">temperaturesArray</a></td></tr>
+<tr class="separator:ab46a5e2e0aa182547e56cec8c41dced8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4e3ac5c0d373c432ac970cc86b6b419f" id="r_a4e3ac5c0d373c432ac970cc86b6b419f"><td class="memItemLeft" align="right" valign="top">QVector&lt; QJsonArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e3ac5c0d373c432ac970cc86b6b419f">timesArray</a></td></tr>
+<tr class="separator:a4e3ac5c0d373c432ac970cc86b6b419f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aba7f22365fc43fba1c2a65edf9413974" id="r_aba7f22365fc43fba1c2a65edf9413974"><td class="memItemLeft" align="right" valign="top">QVector&lt; QJsonArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aba7f22365fc43fba1c2a65edf9413974">rainsArray</a></td></tr>
+<tr class="separator:aba7f22365fc43fba1c2a65edf9413974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a90f96b954a4b538179297f370a3f3431" id="r_a90f96b954a4b538179297f370a3f3431"><td class="memItemLeft" align="right" valign="top">QVector&lt; QJsonArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a90f96b954a4b538179297f370a3f3431">pressuresArray</a></td></tr>
+<tr class="separator:a90f96b954a4b538179297f370a3f3431"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae5f17c02eea5b9bbe3053459c0c97fff" id="r_ae5f17c02eea5b9bbe3053459c0c97fff"><td class="memItemLeft" align="right" valign="top">QVector&lt; QJsonArray &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ae5f17c02eea5b9bbe3053459c0c97fff">windsArray</a></td></tr>
+<tr class="separator:ae5f17c02eea5b9bbe3053459c0c97fff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock"><p>Klasa odpowiedzialna za wyświetlanie interfejsu użytkownika oraz aktualizację danych pogodowych i wykresów. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00027">27</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="aed0faa566811cb430818b3a688e45540" name="aed0faa566811cb430818b3a688e45540"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed0faa566811cb430818b3a688e45540">&#9670;&#160;</a></span>WizualizacjaPogody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WizualizacjaPogody::WizualizacjaPogody </td>
+          <td>(</td>
+          <td class="paramtype">QWidget *</td>          <td class="paramname"><span class="paramname"><em>parent</em><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik na obiekt nadrzędny. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00016">16</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ad75679fba9493d25260cba98609953f7" name="ad75679fba9493d25260cba98609953f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad75679fba9493d25260cba98609953f7">&#9670;&#160;</a></span>~WizualizacjaPogody()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">WizualizacjaPogody::~WizualizacjaPogody </td>
+          <td>(</td>
+          <td class="paramname"><span class="paramname"></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00395">395</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="aca1438e6e108096683c94825b0d0a9aa" name="aca1438e6e108096683c94825b0d0a9aa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aca1438e6e108096683c94825b0d0a9aa">&#9670;&#160;</a></span>CityChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::CityChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks wybranego miasta. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00182">182</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a010a0be3e336169f97dd5559f3ed44af" name="a010a0be3e336169f97dd5559f3ed44af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a010a0be3e336169f97dd5559f3ed44af">&#9670;&#160;</a></span>languageChanged</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::languageChanged </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>index</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">index</td><td>Indeks wybranego języka. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00082">82</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a1c9b4ca8e3d4bee2ee67a7c7c0e39e81" name="a1c9b4ca8e3d4bee2ee67a7c7c0e39e81"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c9b4ca8e3d4bee2ee67a7c7c0e39e81">&#9670;&#160;</a></span>resizeEvent()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::resizeEvent </td>
+          <td>(</td>
+          <td class="paramtype">QResizeEvent *</td>          <td class="paramname"><span class="paramname"><em>event</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">event</td><td>Zdarzenie zmiany rozmiaru. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00100">100</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ae0247e8fa07e0c0751d2ea72b336f073" name="ae0247e8fa07e0c0751d2ea72b336f073"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0247e8fa07e0c0751d2ea72b336f073">&#9670;&#160;</a></span>scaleChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::scaleChart </td>
+          <td>(</td>
+          <td class="paramtype">QChartView *</td>          <td class="paramname"><span class="paramname"><em>chartView</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chartView</td><td>Widok wykresu do skalowania. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00114">114</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9c19b21dc24079f561c7949d935a5bdf" name="a9c19b21dc24079f561c7949d935a5bdf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9c19b21dc24079f561c7949d935a5bdf">&#9670;&#160;</a></span>updateCharts</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateCharts </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>temperatures</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>rainArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>pressArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>windArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>city</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperatures</td><td>Tablica temperatur. [°C] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów. [yyyy-MM-ddTHH:mm] </td></tr>
+    <tr><td class="paramname">rainArray</td><td>Tablica opadów. [mm] </td></tr>
+    <tr><td class="paramname">pressArray</td><td>Tablica ciśnień. [hPa] </td></tr>
+    <tr><td class="paramname">windArray</td><td>Tablica prędkości wiatru. [km/h] </td></tr>
+    <tr><td class="paramname">city</td><td>Nazwa miasta, dla którego pobrano dane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00164">164</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a7b8e4b59ac3831da026d5d51cd83dc33" name="a7b8e4b59ac3831da026d5d51cd83dc33"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b8e4b59ac3831da026d5d51cd83dc33">&#9670;&#160;</a></span>updateFontSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateFontSize </td>
+          <td>(</td>
+          <td class="paramtype">QLabel *</td>          <td class="paramname"><span class="paramname"><em>label</em></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">Etykieta</td><td>do aktualizacji. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00122">122</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8d3b74843c992524835cfe28cee19bb4" name="a8d3b74843c992524835cfe28cee19bb4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d3b74843c992524835cfe28cee19bb4">&#9670;&#160;</a></span>updatePressChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updatePressChart </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>pressS</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pressS</td><td>Tablica ciśnień. [hPa] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów. [yyyy-MM-ddTHH:mm] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00293">293</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a8fb512c9809087cd41e8242a38d3b1de" name="a8fb512c9809087cd41e8242a38d3b1de"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8fb512c9809087cd41e8242a38d3b1de">&#9670;&#160;</a></span>updateRainChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateRainChart </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>rains</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">rains</td><td>Tablica opadów. [mm] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów. [yyyy-MM-ddTHH:mm] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00343">343</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="aa6a6a230bff02f9dcba5bcb1587a84af" name="aa6a6a230bff02f9dcba5bcb1587a84af"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6a6a230bff02f9dcba5bcb1587a84af">&#9670;&#160;</a></span>updateTempChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateTempChart </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>temperatures</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperatures</td><td>Tablica temperatur. [°C] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów. [yyyy-MM-ddTHH:mm] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00193">193</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a11475574777959eca041fa7d5c03687b" name="a11475574777959eca041fa7d5c03687b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a11475574777959eca041fa7d5c03687b">&#9670;&#160;</a></span>updateTemperature</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateTemperature </td>
+          <td>(</td>
+          <td class="paramtype">double</td>          <td class="paramname"><span class="paramname"><em>temperature</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>city</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperature</td><td>Aktualna temperatura. [°C] </td></tr>
+    <tr><td class="paramname">city</td><td>Nazwa miasta, dla którego pobrano dane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00142">142</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<a id="ac4970ffe3ac99677cdd6b049e55f9a9a" name="ac4970ffe3ac99677cdd6b049e55f9a9a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac4970ffe3ac99677cdd6b049e55f9a9a">&#9670;&#160;</a></span>updateWindChart()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WizualizacjaPogody::updateWindChart </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>winds</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em></span>&#160;)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">winds</td><td>Tablica prędkości wiatru. [km/h] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów.[yyyy-MM-ddTHH:mm] </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8cpp_source.html#l00243">243</a> pliku <a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja atrybutów składowych</h2>
+<a id="a479f00598c538a3ecc904fce18445a93" name="a479f00598c538a3ecc904fce18445a93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a479f00598c538a3ecc904fce18445a93">&#9670;&#160;</a></span>cityComboBox</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* WizualizacjaPogody::cityComboBox</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ComboBox z listą miast. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00115">115</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aa5c8bf823ae15ae1efafce7e31419ee6" name="aa5c8bf823ae15ae1efafce7e31419ee6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa5c8bf823ae15ae1efafce7e31419ee6">&#9670;&#160;</a></span>PressChart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QChartView * WizualizacjaPogody::PressChart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00114">114</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a90f96b954a4b538179297f370a3f3431" name="a90f96b954a4b538179297f370a3f3431"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a90f96b954a4b538179297f370a3f3431">&#9670;&#160;</a></span>pressuresArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QJsonArray&gt; WizualizacjaPogody::pressuresArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00117">117</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="abc79dc5d9c3c3cf519108c6730fd9511" name="abc79dc5d9c3c3cf519108c6730fd9511"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abc79dc5d9c3c3cf519108c6730fd9511">&#9670;&#160;</a></span>RainChart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QChartView * WizualizacjaPogody::RainChart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00114">114</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aba7f22365fc43fba1c2a65edf9413974" name="aba7f22365fc43fba1c2a65edf9413974"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aba7f22365fc43fba1c2a65edf9413974">&#9670;&#160;</a></span>rainsArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QJsonArray&gt; WizualizacjaPogody::rainsArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00117">117</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a3d442230473e87fd9dfafe16fe5128df" name="a3d442230473e87fd9dfafe16fe5128df"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3d442230473e87fd9dfafe16fe5128df">&#9670;&#160;</a></span>TempChart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QChartView* WizualizacjaPogody::TempChart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00114">114</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ab46a5e2e0aa182547e56cec8c41dced8" name="ab46a5e2e0aa182547e56cec8c41dced8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46a5e2e0aa182547e56cec8c41dced8">&#9670;&#160;</a></span>temperaturesArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QJsonArray&gt; WizualizacjaPogody::temperaturesArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00117">117</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a4e3ac5c0d373c432ac970cc86b6b419f" name="a4e3ac5c0d373c432ac970cc86b6b419f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e3ac5c0d373c432ac970cc86b6b419f">&#9670;&#160;</a></span>timesArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QJsonArray&gt; WizualizacjaPogody::timesArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00117">117</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a33815079c1aa71cc75a82e54b03efba4" name="a33815079c1aa71cc75a82e54b03efba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a33815079c1aa71cc75a82e54b03efba4">&#9670;&#160;</a></span>ui</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_ui_1_1_wizualizacja_pogody.html">Ui::WizualizacjaPogody</a>* WizualizacjaPogody::ui</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Wskaźnik na interfejs użytkownika. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00112">112</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ae288efa84b8319ec6abe8d9917599ffd" name="ae288efa84b8319ec6abe8d9917599ffd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae288efa84b8319ec6abe8d9917599ffd">&#9670;&#160;</a></span>weatherData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_weather_data.html">WeatherData</a> WizualizacjaPogody::weatherData</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Obiekt <a class="el" href="class_weather_data.html" title="Klasa służy do przechowywania oraz przekazywania danych pogodowych.">WeatherData</a> do pobierania danych pogodowych. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00113">113</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="a8deeae3599a803f0a3f09faa6f93c839" name="a8deeae3599a803f0a3f09faa6f93c839"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8deeae3599a803f0a3f09faa6f93c839">&#9670;&#160;</a></span>WindChart</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QChartView * WizualizacjaPogody::WindChart</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Widoki wykresów temperatury, opadów, ciśnienia i wiatru. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00114">114</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="ae5f17c02eea5b9bbe3053459c0c97fff" name="ae5f17c02eea5b9bbe3053459c0c97fff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae5f17c02eea5b9bbe3053459c0c97fff">&#9670;&#160;</a></span>windsArray</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QVector&lt;QJsonArray&gt; WizualizacjaPogody::windsArray</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tablice danych do wykresów dla różnych miast. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00117">117</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<a id="aaf014e62f96a09ccfa10bd7f5cf6c5f8" name="aaf014e62f96a09ccfa10bd7f5cf6c5f8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf014e62f96a09ccfa10bd7f5cf6c5f8">&#9670;&#160;</a></span>zmianaJezyka</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QComboBox* WizualizacjaPogody::zmianaJezyka</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>ComboBox do zmiany języka. </p>
+
+<p class="definition">Definicja w linii <a class="el" href="mainwindow_8h_source.html#l00116">116</a> pliku <a class="el" href="mainwindow_8h_source.html">mainwindow.h</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="mainwindow_8h_source.html">mainwindow.h</a></li>
+<li><a class="el" href="mainwindow_8cpp_source.html">mainwindow.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_wizualizacja_pogody.html">WizualizacjaPogody</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

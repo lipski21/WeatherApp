@@ -1,0 +1,296 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pogoda: Dokumentacja klasy WeatherData</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Pogoda
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.10.0 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('class_weather_data.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="summary">
+<a href="#pub-slots">Sloty publiczne</a> &#124;
+<a href="#signals">Sygnały</a> &#124;
+<a href="#pub-methods">Metody publiczne</a> &#124;
+<a href="class_weather_data-members.html">Lista wszystkich składowych</a>  </div>
+  <div class="headertitle"><div class="title">Dokumentacja klasy WeatherData</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Klasa służy do przechowywania oraz przekazywania danych pogodowych.  
+ <a href="#details">Więcej...</a></p>
+
+<p><code>#include &lt;<a class="el" href="weatherdata_8h_source.html">weatherdata.h</a>&gt;</code></p>
+<div class="dynheader">
+Diagram dziedziczenia dla WeatherData</div>
+<div class="dyncontent">
+ <div class="center">
+  <img src="class_weather_data.png" alt=""/>
+ </div></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-slots" name="pub-slots"></a>
+Sloty publiczne</h2></td></tr>
+<tr class="memitem:addc91b8daea3243eefaaddc5382bd7c1" id="r_addc91b8daea3243eefaaddc5382bd7c1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#addc91b8daea3243eefaaddc5382bd7c1">handleData</a> (const QJsonObject &amp;data, const QString &amp;city)</td></tr>
+<tr class="memdesc:addc91b8daea3243eefaaddc5382bd7c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Funkcja obsługująca pobierane dane.  <br /></td></tr>
+<tr class="separator:addc91b8daea3243eefaaddc5382bd7c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="signals" name="signals"></a>
+Sygnały</h2></td></tr>
+<tr class="memitem:a9d6d4bf84db9819bdf0da904511cf702" id="r_a9d6d4bf84db9819bdf0da904511cf702"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9d6d4bf84db9819bdf0da904511cf702">temperatureReady</a> (double &amp;temperature, const QString &amp;city)</td></tr>
+<tr class="memdesc:a9d6d4bf84db9819bdf0da904511cf702"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał przekazujący aktualną temperaturę.  <br /></td></tr>
+<tr class="separator:a9d6d4bf84db9819bdf0da904511cf702"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aacbedde751f676c06d4364e2b592179b" id="r_aacbedde751f676c06d4364e2b592179b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aacbedde751f676c06d4364e2b592179b">ChartsReady</a> (const QJsonArray &amp;temperatures, const QJsonArray &amp;timeArray, const QJsonArray &amp;rainArray, const QJsonArray &amp;pressArray, const QJsonArray &amp;windArray, const QString &amp;city)</td></tr>
+<tr class="memdesc:aacbedde751f676c06d4364e2b592179b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sygnał przekazujący dane do aktualizacji wykresów.  <br /></td></tr>
+<tr class="separator:aacbedde751f676c06d4364e2b592179b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Metody publiczne</h2></td></tr>
+<tr class="memitem:a836ebdd7583f1ff908f36583dd9184a3" id="r_a836ebdd7583f1ff908f36583dd9184a3"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a836ebdd7583f1ff908f36583dd9184a3">WeatherData</a> (QObject *parent=nullptr)</td></tr>
+<tr class="memdesc:a836ebdd7583f1ff908f36583dd9184a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Konstruktor.  <br /></td></tr>
+<tr class="separator:a836ebdd7583f1ff908f36583dd9184a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Opis szczegółowy</h2>
+<div class="textblock">
+<p class="definition">Definicja w linii <a class="el" href="weatherdata_8h_source.html#l00011">11</a> pliku <a class="el" href="weatherdata_8h_source.html">weatherdata.h</a>.</p>
+</div><h2 class="groupheader">Dokumentacja konstruktora i destruktora</h2>
+<a id="a836ebdd7583f1ff908f36583dd9184a3" name="a836ebdd7583f1ff908f36583dd9184a3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a836ebdd7583f1ff908f36583dd9184a3">&#9670;&#160;</a></span>WeatherData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">WeatherData::WeatherData </td>
+          <td>(</td>
+          <td class="paramtype">QObject *</td>          <td class="paramname"><span class="paramname"><em>parent</em><span class="paramdefsep"> = </span><span class="paramdefval">nullptr</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">explicit</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">parent</td><td>Wskaźnik na obiekt nadrzędny. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="weatherdata_8cpp_source.html#l00006">6</a> pliku <a class="el" href="weatherdata_8cpp_source.html">weatherdata.cpp</a>.</p>
+
+</div>
+</div>
+<h2 class="groupheader">Dokumentacja funkcji składowych</h2>
+<a id="aacbedde751f676c06d4364e2b592179b" name="aacbedde751f676c06d4364e2b592179b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aacbedde751f676c06d4364e2b592179b">&#9670;&#160;</a></span>ChartsReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherData::ChartsReady </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>temperatures</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>timeArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>rainArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>pressArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QJsonArray &amp;</td>          <td class="paramname"><span class="paramname"><em>windArray</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>city</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperatures</td><td>Tablica temperatur. [°C] </td></tr>
+    <tr><td class="paramname">timeArray</td><td>Tablica czasów. [yyyy-MM-ddTHH:mm] </td></tr>
+    <tr><td class="paramname">rainArray</td><td>Tablica opadów. [mm] </td></tr>
+    <tr><td class="paramname">pressArray</td><td>Tablica ciśnień. [hPa] </td></tr>
+    <tr><td class="paramname">windArray</td><td>Tablica prędkości wiatru. [km/h] </td></tr>
+    <tr><td class="paramname">city</td><td>Nazwa miasta, dla którego przekazywane są dane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="moc__weatherdata_8cpp_source.html#l00185">185</a> pliku <a class="el" href="moc__weatherdata_8cpp_source.html">moc_weatherdata.cpp</a>.</p>
+
+</div>
+</div>
+<a id="addc91b8daea3243eefaaddc5382bd7c1" name="addc91b8daea3243eefaaddc5382bd7c1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#addc91b8daea3243eefaaddc5382bd7c1">&#9670;&#160;</a></span>handleData</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherData::handleData </td>
+          <td>(</td>
+          <td class="paramtype">const QJsonObject &amp;</td>          <td class="paramname"><span class="paramname"><em>data</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>city</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">slot</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">data</td><td>Dane pogodowe pobrane z API. </td></tr>
+    <tr><td class="paramname">city</td><td>Nazwa miasta, dla którego pobrano dane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="weatherdata_8cpp_source.html#l00012">12</a> pliku <a class="el" href="weatherdata_8cpp_source.html">weatherdata.cpp</a>.</p>
+
+</div>
+</div>
+<a id="a9d6d4bf84db9819bdf0da904511cf702" name="a9d6d4bf84db9819bdf0da904511cf702"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9d6d4bf84db9819bdf0da904511cf702">&#9670;&#160;</a></span>temperatureReady</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void WeatherData::temperatureReady </td>
+          <td>(</td>
+          <td class="paramtype">double &amp;</td>          <td class="paramname"><span class="paramname"><em>temperature</em>, </span></td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const QString &amp;</td>          <td class="paramname"><span class="paramname"><em>city</em></span>&#160;)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">signal</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parametry</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">temperature</td><td>Aktualna temperatura. [°C] </td></tr>
+    <tr><td class="paramname">city</td><td>Nazwa miasta, dla którego przekazywane są dane. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definicja w linii <a class="el" href="moc__weatherdata_8cpp_source.html#l00178">178</a> pliku <a class="el" href="moc__weatherdata_8cpp_source.html">moc_weatherdata.cpp</a>.</p>
+
+</div>
+</div>
+<hr/>Dokumentacja dla tej klasy została wygenerowana z plików:<ul>
+<li><a class="el" href="weatherdata_8h_source.html">weatherdata.h</a></li>
+<li><a class="el" href="moc__weatherdata_8cpp_source.html">moc_weatherdata.cpp</a></li>
+<li><a class="el" href="weatherdata_8cpp_source.html">weatherdata.cpp</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="class_weather_data.html">WeatherData</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>

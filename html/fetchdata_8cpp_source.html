@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pl">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.10.0"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Pogoda: Plik źródłowy fetchdata.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="clipboard.js"></script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<script type="text/javascript" src="cookie.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Pogoda
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Wygenerowano przez Doxygen 1.10.0 -->
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',false,false,'search.php','Szukaj');
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() { codefold.init(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function(){initNavTree('fetchdata_8cpp_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<div class="header">
+  <div class="headertitle"><div class="title">fetchdata.cpp</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="fetchdata_8cpp.html">Idź do dokumentacji tego pliku.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="fetchdata_8h.html">fetchdata.h</a>&quot;</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;QNetworkRequest&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &lt;QJsonDocument&gt;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;QJsonObject&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;QJsonArray&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span> </div>
+<div class="foldopen" id="foldopen00007" data-start="{" data-end="}">
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno"><a class="line" href="class_weather_data_fetcher.html#ac96682c2ab4af15bf63a81cdee539dc8">    7</a></span><a class="code hl_function" href="class_weather_data_fetcher.html#ac96682c2ab4af15bf63a81cdee539dc8">WeatherDataFetcher::WeatherDataFetcher</a>(QObject *parent) : QObject(parent)</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>{</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    <a class="code hl_variable" href="class_weather_data_fetcher.html#aac336fd73eee8039130bc6bec81c0d5f">manager</a> = <span class="keyword">new</span> QNetworkAccessManager(<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>    connect(<a class="code hl_variable" href="class_weather_data_fetcher.html#aac336fd73eee8039130bc6bec81c0d5f">manager</a>, &amp;QNetworkAccessManager::finished,</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>            <span class="keyword">this</span>, &amp;<a class="code hl_slot" href="class_weather_data_fetcher.html#a94e3f6ece01bade65e864ecc7ff73926">WeatherDataFetcher::handleNetworkReply</a>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>}</div>
+</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
+<div class="foldopen" id="foldopen00014" data-start="{" data-end="}">
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="class_weather_data_fetcher.html#a8158be8d77b39839fcc2f4ffce689293">   14</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="class_weather_data_fetcher.html#a8158be8d77b39839fcc2f4ffce689293">WeatherDataFetcher::fetchData</a>(<span class="keyword">const</span> QUrl &amp;url , <span class="keyword">const</span> QString&amp; city) <span class="comment">// Zapytanie o dane</span></div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>{</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    QNetworkRequest request(url);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>    QNetworkReply *reply = <a class="code hl_variable" href="class_weather_data_fetcher.html#aac336fd73eee8039130bc6bec81c0d5f">manager</a>-&gt;get(request);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>    <a class="code hl_variable" href="class_weather_data_fetcher.html#a0c214823d09f76a35bbaa4e04b32c075">replyToCityMap</a>[reply] = city;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span> <span class="comment">//   connect(reply, &amp;QNetworkReply::finished, this, [this, reply]() { handleNetworkReply(reply); });</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>}</div>
+</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="class_weather_data_fetcher.html#a94e3f6ece01bade65e864ecc7ff73926">   23</a></span><span class="keywordtype">void</span> <a class="code hl_slot" href="class_weather_data_fetcher.html#a94e3f6ece01bade65e864ecc7ff73926">WeatherDataFetcher::handleNetworkReply</a>(QNetworkReply *reply)</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>{</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    QString city = <a class="code hl_variable" href="class_weather_data_fetcher.html#a0c214823d09f76a35bbaa4e04b32c075">replyToCityMap</a>.value(reply);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    <span class="keywordflow">if</span> (reply-&gt;error() != QNetworkReply::NoError) {</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>        qDebug() &lt;&lt; <span class="stringliteral">&quot;Wystąpił błąd podczas pobierania danych:&quot;</span> &lt;&lt; reply-&gt;errorString(); <span class="comment">// Obsługa błędu przy pobieraniu danych</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>    }</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span> </div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>    <span class="keyword">auto</span> response = reply-&gt;readAll();</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>    QJsonDocument doc = QJsonDocument::fromJson(response);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    QJsonObject json = doc.object();                        <span class="comment">// stworzenie obiektu json</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    emit <a class="code hl_signal" href="class_weather_data_fetcher.html#a6368d0358345a189918812165dd889b2">dataReady</a>(json , city);   <span class="comment">// wysłanie sygnału</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    reply-&gt;deleteLater();</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    <a class="code hl_variable" href="class_weather_data_fetcher.html#a0c214823d09f76a35bbaa4e04b32c075">replyToCityMap</a>.remove(reply);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>}</div>
+</div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_a0c214823d09f76a35bbaa4e04b32c075"><div class="ttname"><a href="class_weather_data_fetcher.html#a0c214823d09f76a35bbaa4e04b32c075">WeatherDataFetcher::replyToCityMap</a></div><div class="ttdeci">QMap&lt; QNetworkReply *, QString &gt; replyToCityMap</div><div class="ttdef"><b>Definition</b> <a href="fetchdata_8h_source.html#l00046">fetchdata.h:46</a></div></div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_a6368d0358345a189918812165dd889b2"><div class="ttname"><a href="class_weather_data_fetcher.html#a6368d0358345a189918812165dd889b2">WeatherDataFetcher::dataReady</a></div><div class="ttdeci">void dataReady(const QJsonObject &amp;json, const QString &amp;city)</div><div class="ttdoc">Sygnał wysyłany, gdy dane są gotowe.</div><div class="ttdef"><b>Definition</b> <a href="moc__fetchdata_8cpp_source.html#l00165">moc_fetchdata.cpp:165</a></div></div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_a8158be8d77b39839fcc2f4ffce689293"><div class="ttname"><a href="class_weather_data_fetcher.html#a8158be8d77b39839fcc2f4ffce689293">WeatherDataFetcher::fetchData</a></div><div class="ttdeci">void fetchData(const QUrl &amp;url, const QString &amp;city)</div><div class="ttdoc">Inicjuje pobieranie danych.</div><div class="ttdef"><b>Definition</b> <a href="#l00014">fetchdata.cpp:14</a></div></div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_a94e3f6ece01bade65e864ecc7ff73926"><div class="ttname"><a href="class_weather_data_fetcher.html#a94e3f6ece01bade65e864ecc7ff73926">WeatherDataFetcher::handleNetworkReply</a></div><div class="ttdeci">void handleNetworkReply(QNetworkReply *reply)</div><div class="ttdoc">Slot do obsługi odpowiedzi sieciowej.</div><div class="ttdef"><b>Definition</b> <a href="#l00023">fetchdata.cpp:23</a></div></div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_aac336fd73eee8039130bc6bec81c0d5f"><div class="ttname"><a href="class_weather_data_fetcher.html#aac336fd73eee8039130bc6bec81c0d5f">WeatherDataFetcher::manager</a></div><div class="ttdeci">QNetworkAccessManager * manager</div><div class="ttdef"><b>Definition</b> <a href="fetchdata_8h_source.html#l00045">fetchdata.h:45</a></div></div>
+<div class="ttc" id="aclass_weather_data_fetcher_html_ac96682c2ab4af15bf63a81cdee539dc8"><div class="ttname"><a href="class_weather_data_fetcher.html#ac96682c2ab4af15bf63a81cdee539dc8">WeatherDataFetcher::WeatherDataFetcher</a></div><div class="ttdeci">WeatherDataFetcher(QObject *parent=nullptr)</div><div class="ttdoc">Konstruktor.</div><div class="ttdef"><b>Definition</b> <a href="#l00007">fetchdata.cpp:7</a></div></div>
+<div class="ttc" id="afetchdata_8h_html"><div class="ttname"><a href="fetchdata_8h.html">fetchdata.h</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->
+<!-- start footer part -->
+<div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
+  <ul>
+    <li class="navelem"><a class="el" href="fetchdata_8cpp.html">fetchdata.cpp</a></li>
+    <li class="footer">Wygenerowano przez <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.10.0 </li>
+  </ul>
+</div>
+</body>
+</html>
